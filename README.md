@@ -5,7 +5,7 @@ Using regression modules to predict the starting salaries of graduates
 
 The aim of this project is to build a regression model that predicts a graduateâ€™s starting salary. The prediction is based on key factors derived from their education, skills, and extracurricular activities (e.g. GPA, university ranking, soft skills, internships). This was attempted using five regression methods and utilizing the best performing model.
 
-## Dataset Description
+## Data used
 
 - **Source:** [Education and Career Success Dataset](https://www.kaggle.com/datasets/adilshamim8/education-and-career-success/data)
 - **Overview:**  
@@ -13,6 +13,11 @@ The aim of this project is to build a regression model that predicts a graduateâ
   - **Academic Metrics:** High School GPA, University GPA, SAT Score, University Ranking
   - **Extracurricular Experiences:** Internships, Projects, Certifications, Soft Skills, Networking Scores
   - **Career Outcomes:** Starting Salary, Job Offers, Career Satisfaction
+ 
+<p float="left">
+  <img src="README_figures/data.png" width="340" />
+</p>
+
  
 ## Model Selection
 
