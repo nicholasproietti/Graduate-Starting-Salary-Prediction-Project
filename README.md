@@ -15,7 +15,7 @@ The aim of this project is to build a regression model that predicts a graduateâ
   - **Career Outcomes:** Starting Salary, Job Offers, Career Satisfaction
  
 <div align="center">
-  <img src="README_figures/data.png" width="500" />
+  <img src="README_figures/data.png" width="800" />
 </div>
 
  
