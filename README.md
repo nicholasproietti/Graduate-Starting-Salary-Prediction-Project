@@ -14,9 +14,9 @@ The aim of this project is to build a regression model that predicts a graduateâ
   - **Extracurricular Experiences:** Internships, Projects, Certifications, Soft Skills, Networking Scores
   - **Career Outcomes:** Starting Salary, Job Offers, Career Satisfaction
  
-<p float="left">
-  <img src="README_figures/data.png" width="340" />
-</p>
+<div align="center">
+  <img src="README_figures/data.png" width="500" />
+</div>
 
  
 ## Model Selection
