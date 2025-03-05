@@ -140,9 +140,8 @@ All the models lacked strong predictive power, but the Ridge regression model pe
 
 ## Conclusions
 
-This project aimed to predict graduate starting salaries using academic and skill-based factors. However, data analysis revealed weak correlations between key features and salary—likely due to dataset issues such as signs of potential fabrication. 
-
-Although the all final models (Ridge Regression, Neural Networks) did not deliver strong predictive power, they provided valuable insights into data integrity challenges and the importance of dataset selection. The model was deployed as a salary calculator to demonstrate practical applications of regression-based predictions, highlighting that understanding and documenting data limitations is as important as model accuracy in real-world projects.
+This project aimed to predict graduate starting salaries using academic and skill-based factors. However, data analysis revealed weak correlations between key features and salary—likely due to dataset issues such as potential manipulation and missing real-world trends. Although the final models (Ridge Regression, Neural Networks) did not deliver strong predictive power, they provided valuable insights into data integrity challenges and the importance of dataset selection. The model was deployed as a [salary calculator](https://ridgesimplesalarycalculator.w3spaces.com)
+ to demonstrate practical applications of regression-based predictions, highlighting that understanding and documenting data limitations is as important as model accuracy in real-world projects.
 
 ## Technologies Used
 
