@@ -98,8 +98,8 @@ Several regression models were implemented and compared to predict graduate star
 ### Simple Feedforward Neural Network
 
 <div style="display: flex; justify-content: center; align-items: center;">
-  <img src="README_figures/NN_loss.png" width="400" style="margin-right: 10px;" />
-  <img src="README_figures/NN_salary_plot.png" width="400" />
+  <img src="README_figures/NN_loss.png" width="500" style="margin-right: 10px;" />
+  <img src="README_figures/NN_salary_plot.png" width="420" />
 </div>
 
 Although the network learned useful representations without overfitting, the predictive power is not strong. This can be explained by the relatively low sample size (5000) of the dataset for training a neural network.
