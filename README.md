@@ -1,5 +1,5 @@
 # Graduate Starting Salary Predictor
-Using regression modules to predict the starting salaries of graduates
+Using regression models to predict the starting salaries of graduates
 
 ## Purpose
 
