@@ -18,7 +18,7 @@ This case study explores the challenge of predicting a graduate’s starting sal
   <img src="README_figures/data.png" width="800" />
 </div>
 
-## Data Analysis
+## Exploratory Data Analysis
 
 Notably, there were several peculiar features discovered about the dataset. For example, the target variable (starting salary) did not change with features as one would expect (e.g., the relationship between salary and the number of internships was not evident). This raised concerns about whether the dataset captures real-world dynamics accurately.
 
@@ -30,17 +30,17 @@ Notably, there were several peculiar features discovered about the dataset. For 
 Histograms for various variables suggested that the data was not collected from a traditional survey but rather appears to be randomly generated to follow pre-defined distributions. For example, the salary variable approximates a normal distribution with left-hand censoring, and many feature variables are uniformly distributed.
 
 <div align="center">
-  <img src="README_figures/salary_hist.png" width="800" />
+  <img src="README_figures/salary_hist.png" width="600" />
 </div>
 
 <div align="center">
-  <img src="README_figures/internships_hist.png" width="800" />
+  <img src="README_figures/internships_hist.png" width="600" />
 </div>
 
 Additionally, the survey methodology seems to have involved stratified sampling along gender lines, which resulted in oversampling of minority genders in certain fields. For instance, the dataset shows nearly a 50/50 gender split among computer science graduates, even though actual data indicates that about 75% of CS degrees are awarded to males [Statista](https://www.statista.com/statistics/1473178/new-computer-science-graduates-genders-us-canada/).
 
 <div align="center">
-  <img src="README_figures/cs_gender_bar.png" width="800" />
+  <img src="README_figures/cs_gender_bar.png" width="600" />
 </div>
  
 ## Model Selection
