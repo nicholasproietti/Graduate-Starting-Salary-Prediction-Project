@@ -145,9 +145,9 @@ This project aimed to predict graduate starting salaries using academic and skil
 
 ## Technologies Used
 
-- **Python 3.x**
-- **PyTorch** (for the neural network model)
-- **scikit-learn** (for Linear, Ridge, Lasso, and OLS regression)
-- **Pandas & NumPy** (for data manipulation)
-- **Matplotlib & Seaborn** (for data visualization)
-- **Statsmodels** (for OLS regression analysis)
+- **Python 3.11.5**
+- **PyTorch 2.6.0** (for the neural network model)
+- **scikit-learn 1.6.1** (for Linear, Ridge, Lasso, and OLS regression)
+- **Pandas 2.2.3 & NumPy 1.26.4** (for data manipulation)
+- **Matplotlib 3.10.0 & Seaborn 0.13.2** (for data visualization)
+- **Statsmodels 0.14.4** (for OLS regression analysis)
