@@ -1,11 +1,11 @@
 # Graduate Starting Salary Predictor
 Using regression modules to predict the starting salaries of graduates
 
-## Goal
+## Purpose
 
-The aim of this project is to build a regression model that predicts a graduate’s starting salary. The prediction is based on key factors derived from their education, skills, and extracurricular activities (e.g. GPA, university ranking, soft skills, internships). This was attempted using five regression methods and utilizing the best performing model.
+This case study explores the challenge of predicting a graduate’s starting salary using regression techniques. The project was initially set up to leverage academic metrics (such as GPA and SAT scores), extracurricular experiences (including internships, projects, and certifications), and other key factors. However, the data revealed several limitations that affected the model's predictive power. Rather than simply aiming for high accuracy, the focus shifted to understanding the intricacies of real-world data—identifying inherent biases and methodological challenges. Ultimately, this case study serves as both an exploration of regression-based prediction methods and a learning opportunity on how data quality and survey design can shape outcomes in applied machine learning projects.
 
-## Data used
+## Dataset
 
 - **Source:** [Education and Career Success Dataset](https://www.kaggle.com/datasets/adilshamim8/education-and-career-success/data)
 - **Overview:**  
@@ -18,6 +18,30 @@ The aim of this project is to build a regression model that predicts a graduate�
   <img src="README_figures/data.png" width="800" />
 </div>
 
+## Data Analysis
+
+Notably, there were several peculiar features discovered about the dataset. For example, the target variable (starting salary) did not change with features as one would expect (e.g., the relationship between salary and the number of internships was not evident). This raised concerns about whether the dataset captures real-world dynamics accurately.
+
+<div style="display: flex; justify-content: center; align-items: center;">
+  <img src="README_figures/corr_heatmap.png" width="500" style="margin-right: 10px;" />
+  <img src="README_figures/corr_plots.png" width="500" />
+</div>
+
+Histograms for various variables suggested that the data was not collected from a traditional survey but rather appears to be randomly generated to follow pre-defined distributions. For example, the salary variable approximates a normal distribution with left-hand censoring, and many feature variables are uniformly distributed.
+
+<div align="center">
+  <img src="README_figures/salary_hist.png" width="800" />
+</div>
+
+<div align="center">
+  <img src="README_figures/internships_hist.png" width="800" />
+</div>
+
+Additionally, the survey methodology seems to have involved stratified sampling along gender lines, which resulted in oversampling of minority genders in certain fields. For instance, the dataset shows nearly a 50/50 gender split among computer science graduates, even though actual data indicates that about 75% of CS degrees are awarded to males [Statista](https://www.statista.com/statistics/1473178/new-computer-science-graduates-genders-us-canada/).
+
+<div align="center">
+  <img src="README_figures/cs_gender_bar.png" width="800" />
+</div>
  
 ## Model Selection
 
@@ -69,11 +93,56 @@ Several regression models were implemented and compared to predict graduate star
 - **Comparative Analysis:**  
   - All models were evaluated on the same validation set with RMSE as the primary metric.
     
-## Results and Conclusions
+## Results 
 
-### Results
+### Simple Feedforward Neural Network
 
-### Conclusions
+<div style="display: flex; justify-content: center; align-items: center;">
+  <img src="README_figures/NN_loss.png" width="400" style="margin-right: 10px;" />
+  <img src="README_figures/NN_salary_plot.png" width="400" />
+</div>
+
+Although the network learned useful representations without overfitting, the predictive power is not strong. This can be explained by the relatively low sample size (5000) of the dataset for training a neural network.
+
+### Linear Regression
+
+<div align="center">
+  <img src="README_figures/linearreg_plot.png" width="800" />
+</div>
+
+### Ridge and Lasso Regression
+
+<div style="display: flex; justify-content: center; align-items: center;">
+  <img src="README_figures/ridgereg_plot.png" width="500" style="margin-right: 10px;" />
+  <img src="README_figures/lassoreg_plot.png" width="500" />
+</div>
+
+### OLS Regression
+
+<div align="center">
+  <img src="README_figures/olsreg_plot.png" width="800" />
+</div>
+
+### Model Comparison
+
+<div align="center">
+  <img src="README_figures/comparison.png" width="800" />
+</div>
+
+All the models lacked strong predictive power, but the Ridge regression model performed the best with the lowest RMSE.
+
+### Final Ridge Regression Results
+
+<div style="display: flex; justify-content: center; align-items: center;">
+  <img src="README_figures/final.png" width="400" style="margin-right: 10px;" />
+  <img src="README_figures/final_residuals.png" width="400" />
+</div>
+
+## Conclusions
+
+This project aimed to predict graduate starting salaries using academic and skill-based factors. However, data analysis revealed weak correlations between key features and salary—likely due to dataset issues such as signs of potential fabrication. 
+
+Although the all final models (Ridge Regression, Neural Networks) did not deliver strong predictive power, they provided valuable insights into data integrity challenges and the importance of dataset selection. The model was deployed as a salary calculator to demonstrate practical applications of regression-based predictions, highlighting that understanding and documenting data limitations is as important as model accuracy in real-world projects.
 
 ## Technologies Used
 
